@@ -28,6 +28,7 @@ INSERT INTO pais VALUES ('PT', 'Portugal');
 INSERT INTO pais VALUES ('PE', 'Peru');
 INSERT INTO pais VALUES ('CL', 'Chile');
 INSERT INTO pais VALUES ('CU', 'Cuba');
+INSERT INTO pais VALUES ('PR', 'Puerto Rico');
 
 
 -- INSERTAR DATOS EN LA TABLA DE idioma
@@ -72,7 +73,7 @@ INSERT INTO genero VALUES (19, 'Thriller');
 
 
 -- INSERTAR DATOS EN LA TABLA DE saga
-INSERT INTO saga VALUES (1, 'Star Wars', 'Saga conformada por 9 peliculas que narra las aventuras de Luke Skywalker, Han Solo, Princesa Leia, Chewbacca, R2-D2 y C-3PO en una galaxia muy muy lejana.' 1977, 'Universo original creado por George Lucas');
+INSERT INTO saga VALUES (1, 'Star Wars', 'Saga conformada por 9 peliculas que narra las aventuras de Luke Skywalker, Han Solo, Princesa Leia, Chewbacca, R2-D2 y C-3PO en una galaxia muy muy lejana.', 1977, 'Universo original creado por George Lucas');
 INSERT INTO saga VALUES (2, 'Harry Potter', 'Harry Potter es una saga de siete peliculas que narra las aventuras de un joven mago llamado Harry Potter y sus amigos Hermione Granger y Ron Weasley, todos estudiantes de la Escuela de Magia y Hechiceria de Hogwarts.', 2001, 'Basada en los libros escritos por J.K. Rowling');
 INSERT INTO saga VALUES (3, 'Jurassic Park', 'La saga de Jurassic Park cuenta con tres peliculas de ciencia ficcion y terror que se centran en el escape de dinosaurios prehistoricos de un parque tematico.', 1993, 'Basada en las novelas escritas por Michael Crichton');
 INSERT INTO saga Values (4, 'Monsterverse', 'La saga de Monsterverse es una serie de peliculas de ciencia ficcion y terror que se centran en los monstruos de la mitologia japonesa.', 2014, 'Universo original creado por Legendary Pictures');
@@ -91,7 +92,7 @@ INSERT INTO macroserie VALUES(5, 'American Horror Story', 'Antologia de series d
 
 
 -- INSERTAR DATOS EN LA TABLA DE docuserie
-INSERT INTO docuserie VALUES(1, 'En pocas palabras', 'Los documentales relatan una variedad de problemas que impactan la vida de las personas como la ética de la ingeniería genética, la desigualdad racial y la monogamia.' 2018, 'Documentales originales de Netflix');
+INSERT INTO docuserie VALUES(1, 'En pocas palabras', 'Los documentales relatan una variedad de problemas que impactan la vida de las personas como la ética de la ingeniería genética, la desigualdad racial y la monogamia.', 2018, 'Documentales originales de Netflix');
 INSERT INTO docuserie VALUES(2, 'Cosmos', 'Los documentales se centran en la historia de la humanidad y la evolucion de la vida en la Tierra.', 1980, 'Documentales originales de Carl Sagan');
 INSERT INTO docuserie VALUES(3, 'Discovery', 'Documentales que se centran en la naturaleza y la vida salvaje.', 1985, 'Documentales originales de Discovery Channel');
 
@@ -383,12 +384,12 @@ INSERT INTO pelicula VALUES (46, 'US', 8, 'Como entrenar a tu dragón 3', 'Chimu
 -- INSERTANDO DATOS EN LA TABLA DE serie
 INSERT INTO serie VALUES (1, 'US', 1, 'Juego de Tronos', 'En la lucha por el trono de hierro, los siete reinos de Poniente y muchas más casas se disputarán la corona.', 2011, 8, 'R', 0);
 INSERT INTO serie VALUES (2, 'US', 1, 'House of the Dragon', 'La historia de la Casa Targaryen, una de las casas más poderosas de Poniente.', 2022, 1, 'R', 1);
-INSERT INTO serie VALUES (3, 'US', 2, 'The Boys', 'Los superhéroes abusan de sus superpoderes en lugar de usarlos para el bien, y unos 'muchachos' se embarcan en una búsqueda heroica para exponer sus secretos.', 2019, 3, 'R', 0);
-INSERT INTO serie VALUES (4, 'US', 2, 'The Boys: Diábolico', 'Historias cortas animadas, emocionalmente impactantes e irreverentes, ambientadas en el universo de superhéroes de 'The Boys'.', 2022, 1, 'R', 0);
+INSERT INTO serie VALUES (3, 'US', 2, 'The Boys', 'Los superhéroes abusan de sus superpoderes en lugar de usarlos para el bien, y unos muchachos se embarcan en una búsqueda heroica para exponer sus secretos.', 2019, 3, 'R', 0);
+INSERT INTO serie VALUES (4, 'US', 2, 'The Boys: Diábolico', 'Historias cortas animadas, emocionalmente impactantes e irreverentes, ambientadas en el universo de superhéroes de The Boys.', 2022, 1, 'R', 0);
 INSERT INTO serie VALUES (5, 'US', 3, 'Marvel - Daredevil', 'Ciego desde que era joven, Matt Murdock lucha contra la injusticia de día como abogado y por la noche como Daredevil en Nueva York.', 2015, 3, 'PG-13', 1);
 INSERT INTO serie VALUES (6, 'US', 3, 'Marvel - The Punisher', 'Un exmarine se ve envuelto en una conspiración militar mientras trata de castigar a las personas responsables de los asesinatos de los miembros de su familia.', 2017, 2, 'PG-13', 1);
 INSERT INTO serie VALUES (7, 'US', 3, 'Marvel - Luke Cage', 'Luke Cage, un ex convicto con una fuerza sobrehumana y una piel irrompible que ahora lucha contra el crimen y la corrupción.', 2016, 2, 'PG-13', 1);
-INSERT INTO seire VALUES (8, 'US', 3, 'Marvel - Iron Fist', 'Danny Rand regresa a Nueva York después de estar desaparecido durante años, pero su regreso no es lo que esperaba.', 2017, 2, 'PG-13', 1);
+INSERT INTO serie VALUES (8, 'US', 3, 'Marvel - Iron Fist', 'Danny Rand regresa a Nueva York después de estar desaparecido durante años, pero su regreso no es lo que esperaba.', 2017, 2, 'PG-13', 1);
 INSERT INTO serie VALUES (9, 'US', 3, 'Marvel - Jessica Jones', 'Jessica Jones, una ex superheroína, se dedica a investigar casos de superhéroes que han caído en desgracia.', 2015, 3, 'PG-13', 1);
 INSERT INTO serie VALUES (10, 'US', 3, 'Marvel - The Defenders', 'Cuatro superhéroes se unen para combatir a los villanos más peligrosos de Nueva York.', 2017, 1, 'PG-13', 1);
 INSERT INTO serie VALUES (11, 'US', 4, 'Vikings', 'La vida de Ragnar Lodbrok, un legendario vikingo que se convirtió en el rey de Dinamarca.', 2013, 6, 'R', 0);
@@ -396,7 +397,7 @@ INSERT INTO serie VALUES (12, 'US', 4, 'Vikings: Valhalla', 'La historia de Ragn
 INSERT INTO serie VALUES (13, 'US', 5, 'American Horror Story: Murder House', 'Una familia se muda a una casa embrujada y descubre que sus habitantes anteriores no se fueron voluntariamente.', 2011, 1, 'R', 1);
 INSERT INTO serie VALUES (14, 'US', 5, 'American Horror Story: Asylum', 'En 1964, en el asilo psiquiátrico Briarcliff, Nueva Inglaterra, el personal y los pacientes serán victimas de horribles experimentos.', 2012, 1, 'R', 1);
 INSERT INTO serie VALUES (15, 'US', 5, 'American Horror Story: Coven', 'Más de 300 años han pasado desde los días turbulentos de los juicios de Salem y las brujas que lograron escapar ahora se encuentran en peligro de extinción.', 2013, 1, 'R', 1);
-INSERT INTO serie VALUES (16, 'US', 5, 'American Horror Story: Freak Show', 'En la aldea de Jupiter, Florida, en 1952, acaba de llegar a la ciudad un grupo de freaks, que coincide con la extraña aparición de un asesino que amenaza la vida de los habitantes.', 2014, 'R', 1);
+INSERT INTO serie VALUES (16, 'US', 5, 'American Horror Story: Freak Show', 'En la aldea de Jupiter, Florida, en 1952, acaba de llegar a la ciudad un grupo de freaks, que coincide con la extraña aparición de un asesino que amenaza la vida de los habitantes.', 2014, 1, 'R', 1);
 INSERT INTO serie VALUES (17, 'US', 5, 'American Horror Story: Hotel', 'En el enigmático hotel Cortez en Los Angeles, California el detective John Lowe trata de encontrar la verdad sobre una serie de asesinatos.', 2015, 1, 'R', 1);
 INSERT INTO serie VALUES (18, 'US', 5, 'American Horror Story: Roanoke', 'Una pareja se muda a Carolina del Norte, cerca de la casa hay un bosque donde habitan los fantasmas de Thomasin White, la líder de la colonia perdida de Roanoke.', 2016, 1, 'R', 1);
 INSERT INTO serie VALUES (19, 'US', 5, 'American Horror Story: Cult', 'La ciudad ficticia de Brookfield Heights, Michigan, queda dividida por las elecciones presidenciales de Estados Unidos de 2016.', 2017, 1, 'R', 1);
@@ -410,7 +411,7 @@ INSERT INTO serie VALUES (26, 'US', null, 'The Simpsons', 'La familia Simpson, c
 INSERT INTO serie VALUES (27, 'US', null, 'Breaking Bad', 'Un profesor de química, Walter White, es diagnosticado con un cáncer de pulmón en estado terminal. Para asegurar el futuro de su familia, acepta unirse a un antiguo alumno suyo, Jesse Pinkman, para fabricar y vender metanfetamina.', 2008, 5, 'R', 0);
 INSERT INTO serie VALUES (28, 'US', null, 'Better Call Saul', 'La serie se centra en la vida de Jimmy McGill, un abogado que se dedica a defender a los más desfavorecidos, antes de convertirse en Saul Goodman, el abogado de Walter White en Breaking Bad.', 2015, 6, 'R', 0);
 INSERT INTO serie VALUES (29, 'US', null, 'Black Mirror', 'Black Mirror es una serie de televisión británica de ciencia ficción y antología, creada por Charlie Brooker. Cada episodio de la serie se centra en una historia diferente, con diferentes actores, y diferentes escenarios.', 2011, 5, 'R', 0);
-INSERT INTO serie VALUES (30, 'US', null, 'Love, Death & Robots', 'Love, Death & Robots es una serie de animación de antología de ciencia ficción y fantasía creada por Tim Miller y David Fincher para Netflix. La serie está compuesta por trece episodios de media hora cada uno, que se estrenaron el 15 de marzo de 2019.', 2019, 1, 'R', 0);
+INSERT INTO serie VALUES (30, 'US', null, 'Love, Death and Robots', 'Love, Death and Robots es una serie de animación de antología de ciencia ficción y fantasía creada por Tim Miller y David Fincher para Netflix. La serie está compuesta por trece episodios de media hora cada uno, que se estrenaron el 15 de marzo de 2019.', 2019, 1, 'R', 0);
 INSERT INTO serie VALUES (31, 'US', null, 'The Witcher', 'The Witcher es una serie de televisión de fantasía estadounidense basada en la serie de novelas de fantasía épica de Andrzej Sapkowski.', 2019, 2, 'R', 0);
 INSERT INTO serie VALUES (32, 'US', null, 'The Umbrella Academy', 'The Umbrella Academy es una serie de televisión estadounidense de superhéroes basada en la serie de cómics homónima de Gerard Way y Gabriel Bá.', 2019, 3, 'R', 0);
 INSERT INTO serie VALUES (33, 'US', null, 'Friends', 'Friends es una serie de televisión estadounidense de comedia creada por Marta Kauffman y David Crane. La serie sigue las vidas de seis amigos en la ciudad de Nueva York.', 1994, 10, 'PG-13', 0);
@@ -434,29 +435,29 @@ INSERT INTO documental VALUES (7, 'US', 2, 'Cosmos: Una odisea de espacio y tiem
 INSERT INTO documental VALUES (8, 'US', 3, 'Supervivencia al desnudo', 'Supervivencia al desnudo es un documental estadounidense de Discovery. El documental sigue a un grupo de personas que se enfrentan a la vida en la naturaleza sin comida, agua, ropa o herramientas.', 2004, 1, 'PG-13', 1);
 INSERT INTO documental VALUES (9, 'US', 3, 'El mundo de los dinosaurios', 'El mundo de los dinosaurios es un documental estadounidense Discovery. El documental hace un recorrido por la historia de los dinosaurios.', 2000, 1, 'PG-13', 1);
 INSERT INTO documental VALUES (10, 'US', 3, 'Mayday: Accidentes aéreos', 'Mayday: Accidentes aéreos es un documental estadounidense de Discovery, y relata los accidentes aéreos más importantes de la historia.', 2000, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (10, 'CA', 3, 'Alaska: La última frontera', 'Alaska: La última frontera es un documental estadounidense de Discovery, y relata la vida de los habitantes de Alaska.', 2000, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (11, 'US', null, 'Prehistoric Planet', 'Prehistoric Planet es un documental dirigido por Apple TV+, y cuenta la vida y comportamiento de los dinosaurios.', 2022, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (12, 'US', null, 'The Last Dance', 'The Last Dance es un documental dirigido por ESPN, y cuenta la vida y carrera de Michael Jordan.', 2020, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (13, 'US', null, 'Cowspiracy: The Sustainability Secret', 'Cowspiracy: The Sustainability Secret es un documental dirigido por Netflix, y cuenta la historia de la industria de la carne.', 2014, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (14, 'US', null, 'The Social Dilemma', 'The Social Dilemma es un documental dirigido por Netflix, y cuenta la historia de las redes sociales.', 2020, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (15, 'US', null, 'The Game Changers', 'The Game Changers es un documental dirigido por Netflix, y cuenta la historia de la alimentación de los atletas.', 2019, 1, 'PG-13', 0);
-INSERT INTO documental VALUES (16, 'US', null, 'Libranos del mal', 'Libranos del mal narra la historia de los abusos sexuales en la Iglesia Católica.', 2006, 1, 'PG-13', 0);
-INSERT INTO documental VALUES (17, 'US', null, 'The Pharmacist', 'The Pharmacist narra la historia de la industria farmacéutica.', 2019, 1, 'PG-13', 0);
-INSERT INTO documental VALUES (18, 'UK', null, 'Paseando con dinosaurios', 'Un programa que explora la vida de estos extraordinarios animales.', 1999, 1, 'PG-13', 0);
-INSERT INTO documental VALUES (19, 'US', null, 'El misterio de Marilyn Monroe: Las cintas inéditas.', 'Documental que explora el misterio de la muerte del icono del cine Marilyn Monroe a través de entrevistas inéditas con su círculo más cercano.', 2022, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (20, 'US', null, 'Shoah', 'Documental que explora la historia de los judíos durante la Segunda Guerra Mundial.', 1985, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (21, 'US', null, 'O.J. Made in America', 'Documental que explora la vida de O.J. Simpson.', 2016, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (22, 'US', null, 'Wild Wild Country', 'Documental que explora la historia de la secta Rajneesh y su impacto en la comunidad de Antelope, Oregon.', 2018, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (23, 'US', null, 'The Staircase', 'Documental que explora el caso de Michael Peterson, un escritor que fue acusado de asesinar a su esposa.', 2004, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (24, 'US', null, 'The Keepers', 'Documental que explora el caso de la muerte de la monja católica Sister Cathy Cesnik.', 2017, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (25, 'US', null, 'The Imposter', 'Documental que explora el caso de la desaparición de Nicholas Barclay, un niño de 13 años de Texas.', 2012, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (26, 'US', null, 'The Thin Blue Line', 'Documental que explora el caso de Randall Dale Adams, un hombre que fue acusado de asesinar a un policía.', 1988, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (27, 'US', null, 'The Jinx: The Life and Deaths of Robert Durst', 'Documental que explora la vida de Robert Durst, un multimillonario que fue acusado de asesinar a tres personas.', 2015, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (26, 'US', null, 'The Thin Blue Line', 'Documental que explora el caso de Randall Dale Adams, un hombre que fue acusado de asesinar a un policía.', 1988, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (27, 'US', null, 'The Jinx: The Life and Deaths of Robert Durst', 'Documental que explora la vida de Robert Durst, un multimillonario que fue acusado de asesinar a tres personas.', 2015, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (28, 'US', null, 'Cowspiracy: The Sustainability Secret', 'Documental que explora el impacto ambiental de la industria de la carne.', 2014, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (29, 'US', null, 'The Cove', 'Documental que explora la caza de delfines en Taiji, Japón.', 2009, 1, 'PG-13', 1);
-INSERT INTO documental VALUES (30, 'US', null, 'The Act of Killing', 'Documental que explora la historia de Anwar Congo, un hombre que fue acusado de asesinar a miles de personas durante el genocidio de Indonesia.', 2012, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (11, 'CA', 3, 'Alaska: La última frontera', 'Alaska: La última frontera es un documental estadounidense de Discovery, y relata la vida de los habitantes de Alaska.', 2000, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (12, 'US', null, 'Prehistoric Planet', 'Prehistoric Planet es un documental dirigido por Apple TV+, y cuenta la vida y comportamiento de los dinosaurios.', 2022, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (13, 'US', null, 'The Last Dance', 'The Last Dance es un documental dirigido por ESPN, y cuenta la vida y carrera de Michael Jordan.', 2020, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (14, 'US', null, 'Cowspiracy: The Sustainability Secret', 'Cowspiracy: The Sustainability Secret es un documental dirigido por Netflix, y cuenta la historia de la industria de la carne.', 2014, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (15, 'US', null, 'The Social Dilemma', 'The Social Dilemma es un documental dirigido por Netflix, y cuenta la historia de las redes sociales.', 2020, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (16, 'US', null, 'The Game Changers', 'The Game Changers es un documental dirigido por Netflix, y cuenta la historia de la alimentación de los atletas.', 2019, 1, 'PG-13', 0);
+INSERT INTO documental VALUES (17, 'US', null, 'Libranos del mal', 'Libranos del mal narra la historia de los abusos sexuales en la Iglesia Católica.', 2006, 1, 'PG-13', 0);
+INSERT INTO documental VALUES (18, 'US', null, 'The Pharmacist', 'The Pharmacist narra la historia de la industria farmacéutica.', 2019, 1, 'PG-13', 0);
+INSERT INTO documental VALUES (19, 'UK', null, 'Paseando con dinosaurios', 'Un programa que explora la vida de estos extraordinarios animales.', 1999, 1, 'PG-13', 0);
+INSERT INTO documental VALUES (20, 'US', null, 'El misterio de Marilyn Monroe: Las cintas inéditas.', 'Documental que explora el misterio de la muerte del icono del cine Marilyn Monroe a través de entrevistas inéditas con su círculo más cercano.', 2022, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (21, 'US', null, 'Shoah', 'Documental que explora la historia de los judíos durante la Segunda Guerra Mundial.', 1985, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (22, 'US', null, 'O.J. Made in America', 'Documental que explora la vida de O.J. Simpson.', 2016, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (23, 'US', null, 'Wild Wild Country', 'Documental que explora la historia de la secta Rajneesh y su impacto en la comunidad de Antelope, Oregon.', 2018, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (24, 'US', null, 'The Staircase', 'Documental que explora el caso de Michael Peterson, un escritor que fue acusado de asesinar a su esposa.', 2004, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (25, 'US', null, 'The Keepers', 'Documental que explora el caso de la muerte de la monja católica Sister Cathy Cesnik.', 2017, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (26, 'US', null, 'The Imposter', 'Documental que explora el caso de la desaparición de Nicholas Barclay, un niño de 13 años de Texas.', 2012, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (27, 'US', null, 'The Thin Blue Line', 'Documental que explora el caso de Randall Dale Adams, un hombre que fue acusado de asesinar a un policía.', 1988, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (28, 'US', null, 'The Jinx: The Life and Deaths of Robert Durst', 'Documental que explora la vida de Robert Durst, un multimillonario que fue acusado de asesinar a tres personas.', 2015, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (29, 'US', null, 'The Thin Blue Line', 'Documental que explora el caso de Randall Dale Adams, un hombre que fue acusado de asesinar a un policía.', 1988, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (30, 'US', null, 'The Jinx: The Life and Deaths of Robert Durst', 'Documental que explora la vida de Robert Durst, un multimillonario que fue acusado de asesinar a tres personas.', 2015, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (31, 'US', null, 'Cowspiracy: The Sustainability Secret', 'Documental que explora el impacto ambiental de la industria de la carne.', 2014, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (32, 'US', null, 'The Cove', 'Documental que explora la caza de delfines en Taiji, Japón.', 2009, 1, 'PG-13', 1);
+INSERT INTO documental VALUES (33, 'US', null, 'The Act of Killing', 'Documental que explora la historia de Anwar Congo, un hombre que fue acusado de asesinar a miles de personas durante el genocidio de Indonesia.', 2012, 1, 'PG-13', 1);
 
 
 -- INSERTANDO DATOS EN LA TABLA DE reproduccionpelicula
@@ -625,9 +626,9 @@ INSERT INTO reproducciondocumental VALUES (18, 54, 27, to_date('19/04/2022'), 'P
 INSERT INTO reproducciondocumental VALUES (19, 56, 24, to_date('21/04/2022'), 'Pausado', 22);
 INSERT INTO reproducciondocumental VALUES (20, 68, 23, to_date('02/04/2022'), 'Pausado', 12);
 INSERT INTO reproducciondocumental VALUES (21, 67, 22, to_date('03/04/2022'), 'Pausado', 35);
-INSERT INTO reproducciondocumental VALUES (22, 176, 34, to_date('04/02/2022'), 'Pausado', 4);
-INSERT INTO reproducciondocumental VALUES (23, 78, 36, to_date('05/03/2022'), 'Terminado', 50);
-INSERT INTO reproducciondocumental VALUES (24, 87, 37, to_date('06/04/2022'), 'Pausado', 23);
+INSERT INTO reproducciondocumental VALUES (22, 176, 31, to_date('04/02/2022'), 'Pausado', 4);
+INSERT INTO reproducciondocumental VALUES (23, 78, 6, to_date('05/03/2022'), 'Terminado', 50);
+INSERT INTO reproducciondocumental VALUES (24, 87, 7, to_date('06/04/2022'), 'Pausado', 23);
 INSERT INTO reproducciondocumental VALUES (25, 14, 26, to_date('07/05/2022'), 'Pausado', 32);
 INSERT INTO reproducciondocumental VALUES (26, 98, 15, to_date('08/06/2022'), 'Pausado', 6);
 INSERT INTO reproducciondocumental VALUES (27, 196, 16, to_date('09/07/2022'), 'Terminado', 15);
@@ -637,9 +638,9 @@ INSERT INTO reproducciondocumental VALUES (30, 155, 18, to_date('01/03/2022'), '
 INSERT INTO reproducciondocumental VALUES (31, 151, 19, to_date('11/04/2022'), 'Pausado', 23);
 INSERT INTO reproducciondocumental VALUES (32, 197, 20, to_date('12/05/2022'), 'Pausado', 23);
 INSERT INTO reproducciondocumental VALUES (33, 133, 30, to_date('14/06/2022'), 'Pausado', 23);
-INSERT INTO reproducciondocumental VALUES (34, 187, 40, to_date('16/02/2022'), 'Terminado', 44);
+INSERT INTO reproducciondocumental VALUES (34, 187, 20, to_date('16/02/2022'), 'Terminado', 44);
 INSERT INTO reproducciondocumental VALUES (35, 111, 29, to_date('17/12/2022'), 'Pausado', 12);
-INSERT INTO reproducciondocumental VALUES (36, 131, 39, to_date('18/11/2022'), 'Pausado', 22);
+INSERT INTO reproducciondocumental VALUES (36, 131, 19, to_date('18/11/2022'), 'Pausado', 22);
 INSERT INTO reproducciondocumental VALUES (37, 113, 2, to_date('24/12/2022'), 'Pausado', 23);
 INSERT INTO reproducciondocumental VALUES (38, 42, 3, to_date('24/11/2022'), 'Pausado', 43);
 INSERT INTO reproducciondocumental VALUES (39, 198, 10, to_date('24/04/2022'), 'Terminado', 45);
@@ -691,7 +692,7 @@ INSERT INTO descargapelicula VALUES (30, 15, 30, to_date('30/01/2022'), 'Pausado
 INSERT INTO descargaserie VALUES (1, 10, 15, to_date('25/05/2022'), 'Pausado', 1000);
 INSERT INTO descargaserie VALUES (2, 20, 22, to_date('22/10/2022'), 'Descargando', 1500);
 INSERT INTO descargaserie VALUES (3, 13, 31, to_date('30/12/2022'), 'Pausado', 2000);
-INSERT INTO descargaserie VALUES (4, 14, 44, to_date('04/05/2022'), 'Descargando', 3000);
+INSERT INTO descargaserie VALUES (4, 14, 40, to_date('04/05/2022'), 'Descargando', 3000);
 INSERT INTO descargaserie VALUES (5, 50, 25, to_date('05/04/2022'), 'Finalizado', 3500);
 INSERT INTO descargaserie VALUES (6, 16, 16, to_date('06/07/2022'), 'Pausado', 3100);
 INSERT INTO descargaserie VALUES (7, 70, 37, to_date('07/09/2022'), 'Descargando', 2050);
@@ -712,11 +713,11 @@ INSERT INTO descargaserie VALUES (20, 199,20, to_date('20/11/2022'), 'Descargand
 -- INSERTANDO DATOS EN LA TABLA DE descargadocumental
 INSERT INTO descargadocumental VALUES (1, 10, 15, to_date('25/07/2022'), 'Finalizado', 1400);
 INSERT INTO descargadocumental VALUES (2, 20, 22, to_date('22/01/2022'), 'Descargando', 1800);
-INSERT INTO descargadocumental VALUES (3, 137, 31, to_date('30/02/2022'), 'Pausado', 2000);
+INSERT INTO descargadocumental VALUES (3, 137, 31, to_date('20/02/2022'), 'Pausado', 2000);
 INSERT INTO descargadocumental VALUES (4, 148, 20, to_date('04/09/2022'), 'Descargando', 1750);
 INSERT INTO descargadocumental VALUES (5, 59, 25, to_date('05/10/2022'), 'Pausado', 3500);
 INSERT INTO descargadocumental VALUES (6, 160, 16, to_date('06/12/2022'), 'Pausado', 3100);
-INSERT INTO descargadocumental VALUES (7, 70, 37, to_date('07/09/2022'), 'Descargando', 2050);
+INSERT INTO descargadocumental VALUES (7, 70, 33, to_date('07/09/2022'), 'Descargando', 2050);
 INSERT INTO descargadocumental VALUES (8, 18, 18, to_date('28/12/2022'), 'Pausado', 3500);
 INSERT INTO descargadocumental VALUES (9, 30, 29, to_date('09/07/2022'), 'Finalizado', 2220);
 INSERT INTO descargadocumental VALUES (10, 91, 10, to_date('10/12/2022'), 'Finalizado', 1300);

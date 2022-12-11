@@ -40,10 +40,10 @@ COMMENT ON COLUMN genero.nombre IS
 -- CREAR TABLA DE SAGAS
 CREATE TABLE saga(
     IdSaga NUMBER NOT NULL,
-    tituloGeneral VARCHAR2(50) NOT NULL,
+    tituloGeneral VARCHAR2(60) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
     añoInicio NUMBER(4) NOT NULL,
-    materialOriginal VARCHAR2(50) NOT NULL,
+    materialOriginal VARCHAR2(60) NOT NULL,
     CONSTRAINT PK_saga PRIMARY KEY (IdSaga)
 );
 COMMENT ON COLUMN saga.materialoriginal IS
@@ -53,10 +53,10 @@ COMMENT ON COLUMN saga.materialoriginal IS
 -- CREAR TABLA DE MACROSERIES
 CREATE TABLE macroserie(
     IdMacroserie NUMBER NOT NULL,
-    tituloGeneral VARCHAR2(50) NOT NULL,
+    tituloGeneral VARCHAR2(60) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
     añoInicio NUMBER(4) NOT NULL,
-    materialOriginal VARCHAR2(50) NOT NULL,
+    materialOriginal VARCHAR2(60) NOT NULL,
     CONSTRAINT PK_macroserie PRIMARY KEY (IdMacroserie)
 );
 COMMENT ON COLUMN macroserie.materialoriginal IS
@@ -66,10 +66,10 @@ COMMENT ON COLUMN macroserie.materialoriginal IS
 -- CREAR TABLA DE DOCUSERIES
 CREATE TABLE docuserie(
     IdDocuserie NUMBER NOT NULL,
-    tituloGeneral VARCHAR2(50) NOT NULL,
+    tituloGeneral VARCHAR2(60) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
     añoInicio NUMBER(4) NOT NULL,
-    materialOriginal VARCHAR2(50) NOT NULL,
+    materialOriginal VARCHAR2(60) NOT NULL,
     CONSTRAINT PK_docuserie PRIMARY KEY (IdDocuserie)
 );
 COMMENT ON COLUMN docuserie.materialoriginal IS
@@ -107,7 +107,7 @@ CREATE TABLE cliente(
     apellido VARCHAR2(25) NOT NULL,
     correo VARCHAR2(50) NOT NULL,
     contraseña VARCHAR2(25) NOT NULL,
-    telefono NUMBER NOT NULL,
+    telefono VARCHAR2(50) NOT NULL,
     fechanacimiento DATE NOT NULL,
     fecharegistro DATE NOT NULL,
     sexo CHAR(1) NOT NULL,
@@ -145,7 +145,7 @@ CREATE TABLE pelicula(
     IdPelicula NUMBER NOT NULL,
     IdPais CHAR(2) NOT NULL,
     IdSaga NUMBER,
-    titulo VARCHAR2(50) NOT NULL,
+    titulo VARCHAR2(60) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
     añoestreno NUMBER(4) NOT NULL,
     estudio VARCHAR2(25) NOT NULL,
@@ -169,7 +169,7 @@ CREATE TABLE documental(
     IdDocumental NUMBER NOT NULL,
     IdPais CHAR(2) NOT NULL,
     IdDocuserie NUMBER,
-    titulo VARCHAR2(50) NOT NULL,
+    titulo VARCHAR2(60) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
     añoestreno NUMBER(4) NOT NULL,
     temporadas NUMBER(3) NOT NULL,
@@ -190,7 +190,7 @@ CREATE TABLE serie(
     IdSerie NUMBER NOT NULL,
     IdPais CHAR(2) NOT NULL,
     IdMacroserie NUMBER,
-    titulo VARCHAR2(50) NOT NULL,
+    titulo VARCHAR2(60) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
     añoestreno NUMBER(4) NOT NULL,
     temporadas NUMBER(3) NOT NULL,
