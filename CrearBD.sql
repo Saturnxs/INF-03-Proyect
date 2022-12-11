@@ -22,9 +22,9 @@ CREATE TABLE idioma(
     CONSTRAINT PK_idioma PRIMARY KEY (IdIdioma)
 );
 COMMENT ON COLUMN idioma.IdIdioma IS
-    'Segun ISO 639-1. Ejemplo ''es'' para espa�ol, ''en'' para ingles, ''fr'' para frances';
+    'Segun ISO 639-1. Ejemplo ''es'' para español, ''en'' para ingles, ''fr'' para frances';
 COMMENT ON COLUMN idioma.nombre IS
-    'Espa�ol, Ingles, frances';
+    'Español, Ingles, frances';
 
 
 -- CREAR TABLA DE GENEROS
@@ -42,7 +42,7 @@ CREATE TABLE saga(
     IdSaga NUMBER NOT NULL,
     tituloGeneral VARCHAR2(50) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
-    a�oInicio NUMBER(4) NOT NULL,
+    añoInicio NUMBER(4) NOT NULL,
     materialOriginal VARCHAR2(50) NOT NULL,
     CONSTRAINT PK_saga PRIMARY KEY (IdSaga)
 );
@@ -55,7 +55,7 @@ CREATE TABLE macroserie(
     IdMacroserie NUMBER NOT NULL,
     tituloGeneral VARCHAR2(50) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
-    a�oInicio NUMBER(4) NOT NULL,
+    añoInicio NUMBER(4) NOT NULL,
     materialOriginal VARCHAR2(50) NOT NULL,
     CONSTRAINT PK_macroserie PRIMARY KEY (IdMacroserie)
 );
@@ -68,7 +68,7 @@ CREATE TABLE docuserie(
     IdDocuserie NUMBER NOT NULL,
     tituloGeneral VARCHAR2(50) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
-    a�oInicio NUMBER(4) NOT NULL,
+    añoInicio NUMBER(4) NOT NULL,
     materialOriginal VARCHAR2(50) NOT NULL,
     CONSTRAINT PK_docuserie PRIMARY KEY (IdDocuserie)
 );
@@ -106,7 +106,7 @@ CREATE TABLE cliente(
     nombre VARCHAR2(25) NOT NULL,
     apellido VARCHAR2(25) NOT NULL,
     correo VARCHAR2(50) NOT NULL,
-    contrase�a VARCHAR2(25) NOT NULL,
+    contraseña VARCHAR2(25) NOT NULL,
     telefono NUMBER NOT NULL,
     fechanacimiento DATE NOT NULL,
     fecharegistro DATE NOT NULL,
@@ -124,8 +124,8 @@ COMMENT ON COLUMN cliente.apellido IS
     'Contempla primer y segundo apellido';
 COMMENT ON COLUMN cliente.correo IS
     'Ejemplo: ''jhidalgou@ucenfotec.ac.cr''';
-COMMENT ON COLUMN cliente.contrase�a IS
-    'Contrase�a del cliente';
+COMMENT ON COLUMN cliente.contraseña IS
+    'Contraseña del cliente';
 COMMENT ON COLUMN cliente.telefono IS
     'Ejemplo: 87233016';
 COMMENT ON COLUMN cliente.fechanacimiento IS
@@ -147,7 +147,7 @@ CREATE TABLE pelicula(
     IdSaga NUMBER,
     titulo VARCHAR2(50) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
-    a�oestreno NUMBER(4) NOT NULL,
+    añoestreno NUMBER(4) NOT NULL,
     estudio VARCHAR2(25) NOT NULL,
     clasificacion VARCHAR2(5) NOT NULL,
     duracion NUMBER(3) NOT NULL,
@@ -156,7 +156,7 @@ CREATE TABLE pelicula(
     CONSTRAINT FK_pelicula_pais FOREIGN KEY (IdPais) REFERENCES pais(IdPais),
     CONSTRAINT FK_pelicula_saga FOREIGN KEY (IdSaga) REFERENCES saga(IdSaga)
 );
-COMMENT ON COLUMN pelicula.a�oestreno IS
+COMMENT ON COLUMN pelicula.añoestreno IS
     'Ejemplo: 2018';
 COMMENT ON COLUMN pelicula.clasificacion IS
     'Ejemplos: TP12+, PG';
@@ -171,7 +171,7 @@ CREATE TABLE documental(
     IdDocuserie NUMBER,
     titulo VARCHAR2(50) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
-    a�oestreno NUMBER(4) NOT NULL,
+    añoestreno NUMBER(4) NOT NULL,
     temporadas NUMBER(3) NOT NULL,
     clasificacion VARCHAR2(5) NOT NULL,
     audioDescription NUMBER(1) NOT NULL,
@@ -179,7 +179,7 @@ CREATE TABLE documental(
     CONSTRAINT FK_documental_pais FOREIGN KEY (IdPais) REFERENCES pais(IdPais),
     CONSTRAINT FK_documental_docuserie FOREIGN KEY (IdDocuserie) REFERENCES docuserie(IdDocuserie)
 );
-COMMENT ON COLUMN documental.a�oestreno IS
+COMMENT ON COLUMN documental.añoestreno IS
     'Ejemplo: 2018';
 COMMENT ON COLUMN documental.clasificacion IS
     'Ejemplos: TP12+, PG';
@@ -192,7 +192,7 @@ CREATE TABLE serie(
     IdMacroserie NUMBER,
     titulo VARCHAR2(50) NOT NULL,
     abstract VARCHAR2(700) NOT NULL,
-    a�oestreno NUMBER(4) NOT NULL,
+    añoestreno NUMBER(4) NOT NULL,
     temporadas NUMBER(3) NOT NULL,
     clasificacion VARCHAR2(5) NOT NULL,
     audioDescription NUMBER(1) NOT NULL,
@@ -200,7 +200,7 @@ CREATE TABLE serie(
     CONSTRAINT FK_serie_pais FOREIGN KEY (IdPais) REFERENCES pais(IdPais),
     CONSTRAINT FK_serie_macroserie FOREIGN KEY (IdMacroserie) REFERENCES macroserie(IdMacroserie)
 );
-COMMENT ON COLUMN serie.a�oestreno IS
+COMMENT ON COLUMN serie.añoestreno IS
     'Ejemplo: 2018';
 COMMENT ON COLUMN serie.clasificacion IS
     'Ejemplos: TP12+, PG';
@@ -268,14 +268,14 @@ CREATE TABLE descargapelicula(
     IdPelicula NUMBER NOT NULL,
     fechaDescarga DATE NOT NULL,
     estado VARCHAR2(15) NOT NULL,
-    tama�o NUMBER NOT NULL,
+    tamaño NUMBER NOT NULL,
     CONSTRAINT PK_descarga_pelicula PRIMARY KEY (IdDescarga),
     CONSTRAINT FK_descarga_pelicula_pelicula FOREIGN KEY (IdPelicula) REFERENCES pelicula(IdPelicula),
     CONSTRAINT FK_descarga_pelicula_cliente FOREIGN KEY (IdCliente) REFERENCES cliente(IdCliente)
 );
 COMMENT ON COLUMN descargapelicula.estado IS
     'Ejemplo: Descargando, pausado y finalizado';
-COMMENT ON COLUMN descargapelicula.tama�o IS
+COMMENT ON COLUMN descargapelicula.tamaño IS
     'Medido en Megabytes';
 
 
@@ -286,14 +286,14 @@ CREATE TABLE descargadocumental(
     IdDocumental NUMBER NOT NULL,
     fechaDescarga DATE NOT NULL,
     estado VARCHAR2(15) NOT NULL,
-    tama�o NUMBER NOT NULL,
+    tamaño NUMBER NOT NULL,
     CONSTRAINT PK_descarga_documental PRIMARY KEY (IdDescarga),
     CONSTRAINT FK_descarga_documental_documental FOREIGN KEY (IdDocumental) REFERENCES documental(IdDocumental),
     CONSTRAINT FK_descarga_documental_cliente FOREIGN KEY (IdCliente) REFERENCES cliente(IdCliente)
 );
 COMMENT ON COLUMN descargadocumental.estado IS
     'Ejemplo: Descargando, pausado y finalizado';
-COMMENT ON COLUMN descargadocumental.tama�o IS
+COMMENT ON COLUMN descargadocumental.tamaño IS
     'Medido en Megabytes';
 
 
@@ -304,14 +304,14 @@ CREATE TABLE descargaserie(
     IdSerie NUMBER NOT NULL,
     fechaDescarga DATE NOT NULL,
     estado VARCHAR2(15) NOT NULL,
-    tama�o NUMBER NOT NULL,
+    tamaño NUMBER NOT NULL,
     CONSTRAINT PK_descarga_serie PRIMARY KEY (IdDescarga),
     CONSTRAINT FK_descarga_serie_serie FOREIGN KEY (IdSerie) REFERENCES serie(IdSerie),
     CONSTRAINT FK_descarga_serie_cliente FOREIGN KEY (IdCliente) REFERENCES cliente(IdCliente)
 );
 COMMENT ON COLUMN descargaserie.estado IS
     'Ejemplo: Descargando, pausado y finalizado';
-COMMENT ON COLUMN descargaserie.tama�o IS
+COMMENT ON COLUMN descargaserie.tamaño IS
     'Medido en Megabytes';
 
 
